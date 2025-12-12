@@ -6,9 +6,9 @@ Incluye entrenamiento en Kaggle, exportación a TorchScript, despliegue en Huggi
 y scripts de inferencia local y vía API.
 
 - /notebooks/
-   - Entrenamiento del modelo (con gráficas)
+   - Entrenamiento del modelo (con gráficas) proyecto_final_pdi.ipynb
    - Exportación a TorchScript y comparación
-   - Notebook de despliegue a HuggingFace Space
+   - Notebook de despliegue a HuggingFace Space ProyectoFinalPDI.ipynb
 - /weights/
    - best.pt
    - best.torchscript
