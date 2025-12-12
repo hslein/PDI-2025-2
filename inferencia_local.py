@@ -4,12 +4,7 @@ import sys
 import os
 import matplotlib.pyplot as plt
 
-model = YOLO("best.pt")  # Cambia a tu nombre real
-
-# Leer ruta de imagen desde consola
-# if len(sys.argv) < 2:
-#     print("Uso: py inferencia_local.py ruta_imagen.jpg")
-#     sys.exit()
+model = YOLO("best.pt") 
 
 image_path = sys.argv[1]
 if not os.path.exists(image_path):
@@ -60,4 +55,5 @@ for result in results:
     for box in result.boxes:
         cls_id = int(box.cls[0])
         conf = float(box.conf[0])
+
         print(f"- Clase: {cls_id} | Confianza: {conf:.2f}")
